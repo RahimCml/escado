@@ -1,6 +1,24 @@
+<script>
+import { ref } from "vue";
+
+export default {
+  name: "HomePage",
+  components: {
+  },
+  setup() {
+    const activeTab = ref("truck"); // Varsayılan aktif sekme
+    return { activeTab };
+  },
+  data() {
+    return {
+      activeColumn: 0, // 0: Hiçbir kolon seçili değil, 1: 1. kolon seçili, 2: 2. kolon seçili, 3: 3. kolon seçili
+    };
+  },
+};
+</script>
+
 <template>
   <div class="home-page">
-    <HeaderMenu />
     <div
       id="carouselExampleIndicators"
       class="carousel slide"
@@ -41,7 +59,11 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="@/assets/airplane-logistic.jpeg" class="d-block w-100" alt="..." />
+          <img
+            src="@/assets/airplane-logistic.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>havva yolu logistikası</h5>
             <p>Daha ətrafli məlumatlar...</p>
@@ -78,32 +100,30 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <div class="home-container">
-  <div class="row">
-    <div class="col">
-      Column
+      <div class="row">
+        <div class="col">
+          <img src="@/assets/icons/icon-airplane.png" alt="Kamyon Resmi" />
+          <h1>Hava Yolu</h1>
+          <p>Hava yolu vasitəsi ilə 10 dan çox ölkədən təslimat</p>
+        </div>
+        <div class="col">
+          <img src="@/assets/icons/icon-truck.png" alt="Location Resmi" />
+          <h1>Quru Yolu</h1>
+          <p>Quru yolu vasitəsi ilə 30 dan çox ölkədən təslimat</p>
+        </div>
+        <div class="col">
+          <img src="@/assets/icons/icon-location.png" alt="Uçak Resmi" />
+          <h1>Ölkələr</h1>
+
+          <h3>30+</h3>
+          <p>ölkədən logistik destək</p>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
   </div>
 </template>
-
-<script>
-import HeaderMenu from "../components/header-menu.vue";
-
-export default {
-  name: "HomePage",
-  components: {
-    HeaderMenu,
-  },
-};
-</script>
 
 <style>
 /* Stil kodları buraya gelecek */
@@ -129,6 +149,49 @@ export default {
 .carousel-control-next-icon {
   margin-left: 40%;
 }
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-container .row {
+  display: flex;
+  gap: 50px; /* Sütunlar arasına 20px mesafe bırakın */
+  width: 70%;
+}
+.home-container .row .col {
+  background-color: transparent; /* Kolonların arka planını saydam yapar */
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-container .row .col:hover {
+  box-shadow: 0 0 1rem grey;
+
+}
+
+.home-container .row .col p:hover {
+  background-color: rgb(38, 108, 38);
+  color: white; /* İkon altındaki metinlerin arka planını beyaz yapar */
+}
+
+.home-container .row .col img {
+  width: 70%;
+  height: 100px;
+}
+.text {
+  font-size: 18px;
+}
+
+/* .home-container .col:hover {
+  color: white;
+  background-color: green;
+} */
 
 @media (max-width: 768px) {
   .carousel-item img {

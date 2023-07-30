@@ -1,18 +1,18 @@
 <script>
 
-// import HeaderMenu from './components/header-menu.vue';
+import HeaderMenu from './components/header-menu.vue';
 
 export default {
   name: 'App',
   components: {
-    // HeaderMenu
+    HeaderMenu
   },
 };
 </script>
 
 <template>
     <div id="app">
-      <!-- <HeaderMenu /> -->
+      <HeaderMenu />
     <router-view />
 </div>
 </template>
