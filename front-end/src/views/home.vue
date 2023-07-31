@@ -72,38 +72,39 @@ export default {
     </div>
 
     <div class="home-container">
-      <div class="row">
-        <div :class="['col', { active: selectedCol === 1 }]" @click="showInfo(1)">
-          <img src="@/assets/icons/icon-airplane.png" alt="Kamyon Resmi" />
-          <h1>Hava Yolu</h1>
-          <p>Hava yolu vasitəsi ilə 10 dan çox ölkədən təslimat</p>
-        </div>
-        <div :class="['col', { active: selectedCol === 2 }]" @click="showInfo(2)">
-          <img src="@/assets/icons/icon-truck.png" alt="Location Resmi" />
-          <h1>Quru Yolu</h1>
-          <p>Quru yolu vasitəsi ilə 30 dan çox ölkədən təslimat</p>
+      <div class="home-container-card">
+        <div class="row">
+          <div :class="['col', { active: selectedCol === 1 }]" @click="showInfo(1)">
+            <font-awesome-icon class="icons" :icon="['fas', 'plane-departure']" />
+            <h1 class="texts">Hava Yolu</h1>
+            <p class="texts">Hava yolu vasitəsi ilə 10 dan çox ölkədən təslimat</p>
+          </div>
+          <div :class="['col', { active: selectedCol === 2 }]" @click="showInfo(2)">
+            <font-awesome-icon class="icons" :icon="['fas', 'truck-fast']" />
+            <h1 class="texts">Quru Yolu</h1>
+            <p class="texts">Quru yolu vasitəsi ilə 30 dan çox ölkədən təslimat</p>
 
-        </div>
-        <div :class="['col', { active: selectedCol === 3 }]" @click="showInfo(3)">
-          <img src="@/assets/icons/icon-location.png" alt="Uçak Resmi" />
-          <h1>Ölkələr</h1>
-          <h3>30+</h3>
-          <p>ölkədən logistik destək</p>
+          </div>
+          <div :class="['col', { active: selectedCol === 3 }]" @click="showInfo(3)">
+            <font-awesome-icon class="icons" :icon="['fas', 'anchor']" />
+            <h1 class="texts">Dəniz Yolu</h1>
+            <h3 class="texts">30+</h3>
+            <p class="texts">Dəniz yolu vasitəsi ilə 20 dan çox ölkədən təslimat</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--
-    data from grid
-   -->
-    <div v-if="selectedCol === 1" class="info">
-      <h1>5 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
-    </div>
-    <div v-if="selectedCol === 2" class="info">
-      <h1>Quru haqqinda</h1>
-    </div>
+      <div class="home-container-info">
+        <div v-if="selectedCol === 1" class="info">
+          <h1>5 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
+        </div>
+        <div v-if="selectedCol === 2" class="info">
+          <h1>Quru haqqinda</h1>
+        </div>
 
-    <div v-if="selectedCol === 3" class="info">
-      <h1>Location haqqinda</h1>
+        <div v-if="selectedCol === 3" class="info">
+          <h1>Location haqqinda</h1>
+        </div>
+      </div>
     </div>
     <FooterComponent />
   </div>
@@ -139,9 +140,17 @@ export default {
 }
 
 .home-container {
+  background-image: url('@/assets/EXP.png');
+  background-size: cover;
+  padding-bottom: 11%;
+
+}
+
+.home-container-card {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding-top: 60px;
   padding-bottom: 10px;
 }
 
@@ -178,10 +187,15 @@ export default {
   /* background-color: rgb(232, 227, 227); */
   box-shadow: 0 0 1rem grey;
 
+} 
+
+.icons {
+  height: 20%;
+  color: #4a715ecf;
 }
 
-.text {
-  font-size: 18px;
+.texts {
+  color: #4a715ecf;
 }
 
 .info {
@@ -197,7 +211,21 @@ export default {
   background-color: green;
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
+  .home-container {
+    background-image: none;
+  }
+
+  .home-container .row .col {
+    height: 300px;
+    width: 400px;
+    background-image: url('@/assets/EXP.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+  }
+
   .carousel-item img {
     max-height: 500px;
     /* 768 piksel genişlikte veya daha küçük ekranlarda yüksekliği 500px yapar */
