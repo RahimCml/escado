@@ -82,10 +82,15 @@ export default {
   
   .navbar-nav .nav-link:hover {
     background-color: green;
+    color: #ffffff;
   }
   
   .navbar-nav .nav-link:hover a {
     color: white; /* Sadece text rengini beyaz yapın */
   }
+
+  /* .navbar-nav .nav-link.active { */
+    /* background-color: rgb(17, 143, 17); */
+    /* } */
   </style>
   
