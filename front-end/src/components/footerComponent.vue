@@ -14,26 +14,34 @@
           <div class="col-lg-6">
             <div class="social-icons">
               <div class="icon-text">
-                <font-awesome-icon :icon="['fab', 'instagram']" />
-                <span>Instagram</span>
+                <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
+                  <font-awesome-icon :icon="['fab', 'instagram']" />
+                  <span> Instagram </span>
+                </a>
               </div>
               <div class="icon-text">
+                <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
                 <font-awesome-icon :icon="['fab', 'facebook']" />
                 <span>Facebook</span>
+              </a>
               </div>
               <div class="icon-text">
+                <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
                 <font-awesome-icon :icon="['fas', 'envelope']" />
                 <span>Mail</span>
+              </a>
               </div>
             </div>
             <div class="contact-info">
               <div class="icon-text">
+                <a class="router-to-social" href="tel: +994 55 361 43 23">
                 <font-awesome-icon :icon="['fas', 'phone']" />
-                <span>+1 123 456 7890</span>
+                <span>+994 55 361 43 23</span>
+              </a>
               </div>
               <div class="icon-text">
                 <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-                <span>123 Main Street, City, Country</span>
+                <span>Baku</span>
               </div>
             </div>
           </div>
@@ -93,6 +101,11 @@ export default {
 
 .icon-text span {
   margin-left: 10px;
+}
+
+.router-to-social {
+  text-decoration: none;
+  color: #4a715ecf;
 }
 
 .legal-notice {

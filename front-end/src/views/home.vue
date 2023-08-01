@@ -102,7 +102,7 @@ export default {
         </div>
 
         <div v-if="selectedCol === 3" class="info">
-          <h1>Location haqqinda</h1>
+          <h1> Dəniz haqqinda</h1>
         </div>
       </div>
     </div>
@@ -150,7 +150,6 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  padding-top: 60px;
   padding-bottom: 10px;
 }
 
@@ -159,6 +158,7 @@ export default {
   gap: 50px;
   /* Sütunlar arasına 20px mesafe bırakın */
   width: 70%;
+  margin-top: 40px;
 }
 
 .home-container .row .col {
@@ -167,14 +167,17 @@ export default {
   text-align: center;
   padding: 30px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1.3px solid #ccc;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 15px;
+  height: 70%;
+
 }
 
+
+/* make sure about which box-shadow is good */
 .home-container .row .col:hover {
   box-shadow: 0 0 1rem grey;
-
 }
 
 
@@ -185,7 +188,7 @@ export default {
 
 .home-container .row .col.active {
   /* background-color: rgb(232, 227, 227); */
-  box-shadow: 0 0 1rem grey;
+  box-shadow: 0 0 1rem rgba(123, 179, 123, 0.846);
 
 } 
 

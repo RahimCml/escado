@@ -9,7 +9,7 @@ export default {
 <template>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="@/assets/escado.png" alt="Logo" />
         </a>
         <button
@@ -29,7 +29,7 @@ export default {
               <router-link class="nav-link active" aria-current="page" to="/">Ana səyfə</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="">Haqqımızda</router-link>
+              <router-link class="nav-link" to="/about">Haqqımızda</router-link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -81,7 +81,7 @@ export default {
   }
   
   .navbar-nav .nav-link:hover {
-    background-color: green;
+    background-color: #13bc6a;
     color: #ffffff;
   }
   
