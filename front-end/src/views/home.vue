@@ -1,11 +1,9 @@
 <script>
 import { ref } from "vue";
-import FooterComponent from "@/components/footerComponent.vue";
 
 export default {
   name: "HomePage",
   components: {
-    FooterComponent
   },
   setup() {
     const activeTab = ref("truck"); // Varsayılan aktif sekme
@@ -95,7 +93,7 @@ export default {
       </div>
       <div class="home-container-info">
         <div v-if="selectedCol === 1" class="info">
-          <h1>5 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
+          <h1>10 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
         </div>
         <div v-if="selectedCol === 2" class="info">
           <h1>Quru haqqinda</h1>
@@ -106,7 +104,6 @@ export default {
         </div>
       </div>
     </div>
-    <FooterComponent />
   </div>
 </template>
 
@@ -140,7 +137,7 @@ export default {
 }
 
 .home-container {
-  background-image: url('@/assets/EXP.png');
+  background-image: url('@/assets/world-map.png');
   background-size: cover;
   padding-bottom: 11%;
 
@@ -171,6 +168,7 @@ export default {
   transition: background-color 0.3s, color 0.3s;
   border-radius: 15px;
   height: 70%;
+  background-color: rgba(255, 255, 255, 0.695);
 
 }
 

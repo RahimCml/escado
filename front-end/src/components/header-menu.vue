@@ -43,9 +43,9 @@ export default {
                 Xidmətlər
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><router-link class="dropdown-item" to="">Logistika xidməti</router-link></li>
-                <li><router-link class="dropdown-item" to="">Tərcümə xidməti</router-link></li>
-                <li><router-link class="dropdown-item" to="">bilet xidməti</router-link></li>
+                <li><router-link class="dropdown-item" to="/logisticService">Logistika xidməti</router-link></li>
+                <li><router-link class="dropdown-item" to="/translateService">Tərcümə xidməti</router-link></li>
+                <li><router-link class="dropdown-item" to="/visaService">bilet xidməti</router-link></li>
               </ul>
             </li>
             <li class="nav-item">

@@ -1,3 +1,10 @@
+
+<script>
+export default {
+  name: "FooterComponent",
+};
+</script>
+
 <template>
   <div>
     <footer class="footer">
@@ -54,12 +61,6 @@
     </footer>
   </div>
 </template>
-
-<script>
-export default {
-  name: "FooterComponent",
-};
-</script>
 
 <style>
 /* Your styles here */

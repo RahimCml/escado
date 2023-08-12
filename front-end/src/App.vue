@@ -1,11 +1,13 @@
 <script>
 
 import HeaderMenu from './components/header-menu.vue';
+import FooterComponent from './components/footerComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderMenu
+    HeaderMenu,
+    FooterComponent
   },
 };
 </script>
@@ -14,6 +16,7 @@ export default {
     <div id="app">
       <HeaderMenu />
     <router-view />
+    <FooterComponent />
 </div>
 </template>
 
