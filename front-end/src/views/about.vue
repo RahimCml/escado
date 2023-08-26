@@ -15,7 +15,9 @@
             v-for="customer in customers"
             :key="customer.name"
           >
-            <div class="customer-avatar"></div>
+            <div class="customer-avatar">
+              
+            </div>
             <div class="customer-name">
               <h3>{{ customer.name }}</h3>
             </div>
@@ -46,7 +48,7 @@ export default {
         },
         {
           name: 'Quluzadə Vəli',
-          feedback: 'Almaq istədiyim məişət avadanlığını mənim üçün araşdırdılar və ucuz qiymətə mənim üçün ən qisa zamanda gətirdilər. Təşəkkürlər Escado'
+          feedback: 'Almaq istədiyim məişət avadanlığını mənim üçün araşdırdılar və ucuz qiymətə mənim üçün ən qisa zamanda gətirdilər.'
         }
       ],
       companyInfo: {
@@ -70,7 +72,9 @@ export default {
   /* flex: 1 1 100px; */
   padding: 100px;
   /* background-color: rgba(0, 128, 0, 0.591); */
-  border: 5px solid  rgba(0, 128, 0, 0.591);
+  background-image: url('@/assets/world-map.png');
+  background-size: cover;
+  padding-bottom: 11%;
   /* background-image: url("@/assets/escado-logo.png"); */
   height: 100%;
   border-radius: 90px 30px 90px 30px;
@@ -107,9 +111,14 @@ export default {
   padding: 25px;
   width: 33%;
   height: 100px;
-  background-color: rgba(0, 128, 0, 0.591);
+  background-color: #1dde8189;
   border-radius: 20px;
   text-align: center;
+}
+
+.customer-text:hover {
+  /* background-color: rgba(217, 239, 220, 0.53);
+  box-shadow:  0 0 1rem #1dde8189; */
 }
 
 .customer-text h1 {
@@ -134,7 +143,7 @@ export default {
   display: inline-block;
   margin-right: 10px;
   height: auto;
-  border: 5px solid  rgba(0, 128, 0, 0.466);
+  border: 5px solid #1dde8189;
   border-radius: 45px 15px 45px 15px;
 
 
@@ -143,7 +152,7 @@ export default {
 .customer-card:hover {
   background-color: rgba(217, 239, 220, 0.53);
   border: none;
-  box-shadow: 0 0 1rem  rgba(0, 128, 0, 0.591);;
+  box-shadow: 0 0 1rem  rgba(0, 128, 0, 0.591);
 }
 
 .customer-name {

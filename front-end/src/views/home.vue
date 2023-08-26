@@ -18,8 +18,12 @@ export default {
   methods: {
     showInfo(colIndex) {
       this.selectedCol = colIndex;
-    },
-  },
+      const infoElement = document.getElementById('info');
+      if (infoElement) {
+        infoElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
 };
 </script>
 
@@ -81,25 +85,24 @@ export default {
             <font-awesome-icon class="icons" :icon="['fas', 'truck-fast']" />
             <h1 class="texts">Quru Yolu</h1>
             <p class="texts">Quru yolu vasitəsi ilə 30 dan çox ölkədən təslimat</p>
-
           </div>
           <div :class="['col', { active: selectedCol === 3 }]" @click="showInfo(3)">
             <font-awesome-icon class="icons" :icon="['fas', 'anchor']" />
             <h1 class="texts">Dəniz Yolu</h1>
-            <h3 class="texts">30+</h3>
-            <p class="texts">Dəniz yolu vasitəsi ilə 20 dan çox ölkədən təslimat</p>
+            <h3 class="texts">30+ ölkədən</h3>
+            <p class="texts">Dəniz yolu vasitəsi ilə təslimat</p>
           </div>
         </div>
       </div>
       <div class="home-container-info">
-        <div v-if="selectedCol === 1" class="info">
+        <div v-if="selectedCol === 1" class="info" id="info">
           <h1>10 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
         </div>
-        <div v-if="selectedCol === 2" class="info">
+        <div v-if="selectedCol === 2" class="info" id="info">
           <h1>Quru haqqinda</h1>
         </div>
 
-        <div v-if="selectedCol === 3" class="info">
+        <div v-if="selectedCol === 3" class="info" id="info">
           <h1> Dəniz haqqinda</h1>
         </div>
       </div>
@@ -139,7 +142,6 @@ export default {
 .home-container {
   background-image: url('@/assets/world-map.png');
   background-size: cover;
-  padding-bottom: 11%;
 
 }
 
@@ -148,6 +150,7 @@ export default {
   justify-content: center;
   margin-top: 10px;
   padding-bottom: 10px;
+  padding-left: 13%;
 }
 
 .home-container .row {
@@ -156,9 +159,11 @@ export default {
   /* Sütunlar arasına 20px mesafe bırakın */
   width: 70%;
   margin-top: 40px;
+  margin-right: 15%;
 }
 
 .home-container .row .col {
+
   background-color: transparent;
   /* Kolonların arka planını saydam yapar */
   text-align: center;
@@ -188,7 +193,7 @@ export default {
   /* background-color: rgb(232, 227, 227); */
   box-shadow: 0 0 1rem rgba(123, 179, 123, 0.846);
 
-} 
+}
 
 .icons {
   height: 20%;
@@ -198,6 +203,7 @@ export default {
 .texts {
   color: #4a715ecf;
 }
+
 
 .info {
   margin-top: 10px;
