@@ -9,18 +9,18 @@ export default {
     <div class="info-about-transport">
           <div class="images">
             <div class="image" style="position: relative; left:45px">
-              <img src="@/assets/aboutus/airplane_about.jpeg" class="image-item">
+              <img src="@/assets/others/airplane_about.jpeg" class="image-item">
             </div>
             <div class="image" style="margin-top: 20%; position: relative; left:20px">
-              <img src="@/assets/aboutus/shipping_about.jpeg" class="image-item">
+              <img src="@/assets/others/hotel.jpeg" class="image-item">
             </div>
             <div class="image">
-              <img src="@/assets/aboutus/2.jpeg" class="image-item">
+              <img src="@/assets/others/passport.png" class="image-item">
             </div>
           </div>
           <div class="info-visa">
-            <h1>Visa xidməti</h1>
-            <p> Escado </p>
+            <h1 style="text-align: center;">Visa dəstəyi</h1>
+            <p> - Dəvətnamənin göndərilməsi <br> - Anketin doldurulması <br> - Aviabiletin münasib qiymətə təşkili <br> - Hava limanında qarşılama <br> - Htelə yerləşdirmə </p>
           </div>
         </div>
     </template>

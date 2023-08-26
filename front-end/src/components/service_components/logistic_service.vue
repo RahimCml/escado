@@ -9,18 +9,18 @@ export default {
 <div class="info-about-transport">
       <div class="images">
         <div class="image" style="position: relative; left:45px">
-          <img src="@/assets/aboutus/airplane_about.jpeg" class="image-item">
+          <img src="@/assets/others/airplane_about.jpeg" class="image-item">
         </div>
         <div class="image" style="margin-top: 20%; position: relative; left:20px">
-          <img src="@/assets/aboutus/shipping_about.jpeg" class="image-item">
+          <img src="@/assets/others/shipping_about.jpeg" class="image-item">
         </div>
         <div class="image">
-          <img src="@/assets/aboutus/2.jpeg" class="image-item">
+          <img src="@/assets/others/2.jpeg" class="image-item">
         </div>
       </div>
       <div class="info-transport">
         <h1>Logistik xidmət</h1>
-        <p> Escado </p>
+        <p> -Konteynerlərin sərfəli qiymətə sifarişi <br> -Qapıdan-qapıya çatdırılma və ya tələb olunan Karqoya təhvil <br> -Yükdaşımanın müddəti və ya istiqaməti barədə onlayn məlumat verilməsi</p>
       </div>
     </div>
 </template>
