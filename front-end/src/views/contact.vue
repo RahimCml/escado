@@ -57,7 +57,7 @@ export default {
                             </div>
                             <div class="row100">
                                 <div class="input-box">
-                                    <input type="submit" value="Göndər">
+                                    <input class="submit" type="submit" value="Göndər">
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default {
                     <div class="info-box">
                         <div>
                             <a class="icons" href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">
-                                <font-awesome-icon :icon="['fas', 'location-dot']"/> </a>
+                                <font-awesome-icon :icon="['fas', 'location-dot']" /> </a>
                             <span>
                                 <a href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">85 Fətəli Xan Xoyski, Bakı</a>
 
@@ -128,9 +128,12 @@ export default {
     width: 100%;
     padding: 40px 100px;
     background-image: url('@/assets/backend.jpeg');
-    background-repeat: no-repeat; /* Tekrarlamayı engelle */
-    background-size: cover; /* Resmi bölüm boyutuna uygun şekilde doldur */
-    background-attachment: fixed; /* Resmin sabitlenmesini sağla */
+    background-repeat: no-repeat;
+    /* Tekrarlamayı engelle */
+    background-size: cover;
+    /* Resmi bölüm boyutuna uygun şekilde doldur */
+    background-attachment: fixed;
+    /* Resmin sabitlenmesini sağla */
 }
 
 .contact-main .title {
@@ -167,6 +170,7 @@ export default {
 #contact-form {
     background-color: var(--box-color);
 }
+
 #contact-info {
     background-color: var(--box-color);
 }
@@ -353,6 +357,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+
     .contact-main {
         padding: 0px;
         background-position: center top;
@@ -362,6 +367,7 @@ export default {
     #contact-form,
     #contact-info {
         padding: 20px;
+        margin: 5px;
     }
 
     #contact-form h3,
@@ -374,7 +380,7 @@ export default {
     #contact-info .info-box div p,
     #contact-info .info-box div a {
         font-size: 1em;
-        padding: 8px;
+        padding: 0px;
     }
 
     #contact-form .input-box input[type="submit"] {
@@ -395,6 +401,10 @@ export default {
         height: 90%;
     }
 
+    #contact-form h3 {
+        text-align: center;
+    }
+
     .box {
         grid-template-columns: 1fr;
         /* Change to a single column layout */
@@ -404,13 +414,28 @@ export default {
             "map";
         /* Adjust grid areas for a single column layout */
         grid-gap: 10px;
+        display: block;
         /* Reduce grid gap for better spacing on small screens */
     }
 
     .input-box {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        /* Yatayda ortala */
+        align-items: center;
+        /* Dikeyde ortala */
         /* Full width for input boxes on smaller screens */
     }
+
+    .input-box .submit {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+
 
     /* Adjust other styles as needed for responsiveness */
     /* For example, you might want to reduce font sizes or change element alignments */

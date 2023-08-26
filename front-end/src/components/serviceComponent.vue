@@ -37,7 +37,7 @@ export default {
             <h1>təcrümə xidməti</h1>
             <p> Escado </p>
         </div>
-        <div class="images"  style="margin-right: 60px;">
+        <div class="images" style="margin-right: 60px;">
             <div class="image" style="position: relative; left:45px">
                 <img src="@/assets/others/airplane_about.jpeg" class="image-item">
             </div>
@@ -96,9 +96,9 @@ export default {
 
 
 #infoAboutTranslate {
+    padding: 30px;
     position: relative;
     flex: 1 1 100px;
-    padding: 100px;
     height: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -155,22 +155,10 @@ export default {
 }
 
 .images {
-    flex: 1 1 100px;
+    /* flex: 1 1 100px; */
     display: flex;
     justify-content: flex-end;
     /* Resimleri sağ tarafta hizala */
-}
-
-.image {
-    width: 33.33%;
-    height: 300px;
-    margin-top: 50px;
-    /* İstediğiniz boyutu burada belirtebilirsiniz */
-    overflow: hidden;
-    /* Resimlerin taşan kısımlarını gizle */
-    border: 5px solid rgb(190, 233, 160);
-    /* Border özelliği ile kenarlık oluştur */
-    border-radius: 100px 40px 100px 40px;
 }
 
 .image-item {
@@ -184,7 +172,7 @@ export default {
 /* ... Your existing styles ... */
 
 @media (max-width: 768px) {
-  #infoAboutTransport && #infoAboutTranslate  && #nfoAboutVisa{
+  #infoAboutTransport  {    
     flex-direction: column;
     align-items: center;
   }
