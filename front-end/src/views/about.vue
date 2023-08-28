@@ -1,7 +1,7 @@
 <template>
   <div class="about-container">
     <div class="about-info">
-      <h1>{{ companyInfo.name }}</h1>
+      <h1 style="font-size: 40px;">{{ companyInfo.name }}</h1>
       <p style="font-size: 25px">{{ companyInfo.description }}</p>
     </div>
     <div class="customer-satisfaction">
@@ -186,7 +186,7 @@ export default {
   font-size: 20px; /* Müşteri geri bildirimini daha küçük bir boyutta göstermek için font-size değerini ayarlayabilirsiniz */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 667px) {
   .about-info {
     padding: 20px;
   }
@@ -195,6 +195,10 @@ export default {
     padding: 20px;
   }
 
+  .about-info {
+    background-color: #1dde8189;
+  background-image: none;
+  }
 .customer-text { 
   width: 100%;
 }

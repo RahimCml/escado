@@ -68,10 +68,10 @@ export default {
                     <h3>Əlaqə</h3>
                     <div class="info-box">
                         <div>
-                            <a class="icons" href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">
+                            <a class="icons" href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">
                                 <font-awesome-icon :icon="['fas', 'location-dot']" /> </a>
                             <span>
-                                <a href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">85 Fətəli Xan Xoyski, Bakı</a>
+                                <a href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">57 Xocasən yolu, Bakı 1063</a>
 
                             </span>
                         </div>
@@ -83,18 +83,18 @@ export default {
                             </span>
                         </div>
                         <div>
-                            <a class="icons" href="tel:+994 12 564 43 46">
+                            <a class="icons" href="tel:+994 55 361 43 23">
                                 <font-awesome-icon :icon="['fas', 'phone']" /> </a>
                             <span>
-                                <a href="tel:+994 12 564 43 46">(012) 564 43 46</a>
+                                <a href="tel:+994 55 361 43 23">+994 55 361 43 23</a>
                             </span>
                         </div>
                         <ul class="sci">
-                            <li><a href="https://www.facebook.com/profile.php?id=100086766889009">
+                            <li><a href="">
                                     <font-awesome-icon class="social-icons" :icon="['fab', 'facebook']"
                                         style="border-radius: 60%; color: #3b5998;" />
                                 </a></li>
-                            <li><a href="https://www.instagram.com/nerimanov_tibb_merkezi_/">
+                            <li><a href="https://www.instagram.com/escadoaz/">
                                     <font-awesome-icon class="social-icons" :icon="['fab', 'instagram']"
                                         style=" border-radius: 30%; color: #fc7d63;" />
                                 </a></li>
@@ -102,9 +102,7 @@ export default {
                     </div>
                 </div>
                 <div class="contact map" style="padding: 20px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2659996995785!2d49.8621627!3d40.402957699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d452db1dd6b%3A0x8660461c98fa8f44!2s85%20Fatali%20Khan%20Khoyski%2C%20Baku!5e0!3m2!1str!2saz!4v1688571985915!5m2!1str!2saz"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.7784667068986!2d49.7652287!3d40.3250739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f9d618a86bd%3A0x7dc2b869e2e7242a!2sEscadoaz!5e0!3m2!1str!2saz!4v1693248515509!5m2!1str!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -356,7 +354,7 @@ export default {
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 667px) {
 
     .contact-main {
         padding: 0px;

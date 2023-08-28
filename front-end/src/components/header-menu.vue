@@ -10,7 +10,7 @@ export default {
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="@/assets/escado.png" alt="Logo" />
+        <img src="@/assets/escado-logo.png" alt="Logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,17 +66,20 @@ export default {
   /* Resim genişliği istediğiniz boyuta göre ayarlayın */
 }
 
+router-link {
+  font-size: 100px;
+}
+
 .navbar-nav .nav-link {
   position: relative;
   margin: 0 10px;
   /* Menü öğeleri arasında 10px mesafe */
   border-radius: 20px;
   /* Köşeleri yuvarlak yapma */
-  font-size: 18px;
+  font-size: 22px;
   /* Text boyutunu 18px yapma */
   display: flex;
   align-items: center;
-  /* Texti dikey ortala */
 }
 
 .navbar-nav .nav-link:hover {

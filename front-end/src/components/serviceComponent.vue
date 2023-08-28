@@ -171,7 +171,7 @@ export default {
 
 /* ... Your existing styles ... */
 
-@media (max-width: 768px) {
+@media (max-width: 667px) {
   #infoAboutTransport  {    
     flex-direction: column;
     align-items: center;

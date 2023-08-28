@@ -28,27 +28,30 @@ export default {
               </div>
               <div class="icon-text">
                 <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
-                <font-awesome-icon :icon="['fab', 'facebook']" />
-                <span>Facebook</span>
-              </a>
+                  <font-awesome-icon :icon="['fab', 'facebook']" />
+                  <span>Facebook</span>
+                </a>
               </div>
               <div class="icon-text">
                 <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
-                <font-awesome-icon :icon="['fas', 'envelope']" />
-                <span>Mail</span>
-              </a>
+                  <font-awesome-icon :icon="['fas', 'envelope']" />
+                  <span>Mail</span>
+                </a>
               </div>
             </div>
             <div class="contact-info">
               <div class="icon-text">
                 <a class="router-to-social" href="tel: +994 55 361 43 23">
-                <font-awesome-icon :icon="['fas', 'phone']" />
-                <span>+994 55 361 43 23</span>
-              </a>
+                  <font-awesome-icon :icon="['fas', 'phone']" />
+                  <span>+994 55 361 43 23</span>
+                </a>
               </div>
               <div class="icon-text">
-                <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-                <span>Baku</span>
+                <a class="router-to-social" href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">
+                  <font-awesome-icon :icon="['fas', 'location-dot']" /> </a>
+                <span>
+                  <a class="router-to-social" href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">57 Xocasən yolu, Bakı 1063</a>
+                </span>
               </div>
             </div>
           </div>
@@ -89,6 +92,7 @@ export default {
   margin-top: 20px;
   margin-left: 50px;
 }
+
 
 .contact-info {
   margin-left: 50px;

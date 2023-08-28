@@ -92,7 +92,7 @@ export default {
           <div :class="['col', { active: selectedCol === 3 }]" @click="showInfo(3)">
             <font-awesome-icon class="icons" :icon="['fas', 'anchor']" />
             <h1 class="texts">Dəniz Yolu</h1>
-            <h3 class="texts">30+ ölkədən</h3>
+            <!-- <h3 class="texts">30+ ölkədən</h3> -->
             <p class="texts">Dəniz yolu vasitəsi ilə təslimat</p>
           </div>
         </div>
@@ -210,11 +210,11 @@ export default {
 
 .icons {
   height: 20%;
-  color: #4a715ecf;
+  color: black;
 }
 
 .texts {
-  color: #4a715ecf;
+  color: black;
 }
 
 
@@ -231,13 +231,13 @@ export default {
   background-color: green;
 } */
 
-@media (max-width: 868px) {
+@media (max-width: 667px) {
   .home-container {
     background-image: none;
   }
 
   .home-container .row .col {
-    height: 300px;
+    height: 200px;
     width: 400px;
     background-image: url('@/assets/EXP.png');
     background-size: 100% 100%;
