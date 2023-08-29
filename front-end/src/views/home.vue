@@ -42,11 +42,6 @@ export default {
         <div class="carousel-item active">
           <img src="@/assets/boat-sea-ocean-tanker.jpg" class="d-block w-200" alt="..." />
           <div class="carousel-caption d-none d-md-block" style=" margin-right: 100%; margin-bottom: 8%;">
-            <div class="video">
-              <video controls autoplay style="width: 150px;">
-                <source src="@/assets/escado.mp4" type="video/mp4" />
-              </video>
-            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -178,18 +173,7 @@ export default {
   height: 70%;
   background-color: rgba(255, 255, 255, 0.695);
 
-}
-
-.video {
-  background-color: #1dde8139;
-  /* İstediğiniz arka plan rengini burada belirleyebilirsiniz */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  /* İstediğiniz gölgeyi burada belirleyebilirsiniz */
-  width: 200px;
-  height: auto;
-  padding: 20px;
-}
-
+}x
 
 /* make sure about which box-shadow is good */
 .home-container .row .col:hover {
