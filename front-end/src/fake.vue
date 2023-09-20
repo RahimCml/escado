@@ -21,43 +21,43 @@ export default {
     <section>
         <div class="contact-main">
             <div class="title">
-                <h2>Contact</h2>
+                <h2>Əlaqə</h2>
             </div>
             <div class="box">
                 <div class="contact form" id="contact-form" style="height: 70%;">
-                    <h3>{{ $t('message') }}</h3>
+                    <h3>Mesaj</h3>
                     <form action="https://formspree.io/f/xqkvkkwv" method="POST">
                         <div class="form-box">
                             <div class="row50">
                                 <div class="input-box">
-                                    <span>{{ $t('name') }}</span>
+                                    <span>Ad</span>
                                     <input type="text" placeholder="Kerem" name="Ad" required>
                                 </div>
                                 <div class="input-box">
-                                    <span>{{ $t('surname') }}</span>
+                                    <span>Soyadı</span>
                                     <input type="text" placeholder="Veliyev" name="Soyadı" required>
                                 </div>
                             </div>
                             <div class="row50">
                                 <div class="input-box">
-                                    <span>{{ $t('email') }}</span>
+                                    <span>Mail</span>
                                     <input type="text" placeholder="kerem@gmail.com" name="Mail" required>
                                 </div>
                                 <div class="input-box">
-                                    <span>{{ $t('phone') }}</span>
+                                    <span>Nömrə</span>
                                     <input type="text" placeholder="+994 555 55 55" name="Nömrə" required>
                                 </div>
                             </div>
                             <div class="row100">
                                 <div class="input-box">
-                                    <span>{{ $t('message') }}</span>
+                                    <span>Mesaj</span>
                                     <textarea name="Mesaj" id="" cols="30" rows="10" placeholder="Mesaj yazın..."
                                         required></textarea>
                                 </div>
                             </div>
                             <div class="row100">
                                 <div class="input-box">
-                                    <input class="submit" type="submit" value="Göndər">
+                                    <input type="submit" value="Göndər">
                                 </div>
                             </div>
                         </div>
@@ -65,20 +65,14 @@ export default {
                     </form>
                 </div>
                 <div class="contact info" id="contact-info">
-                    <h3>Contact</h3>
+                    <h3>Əlaqə</h3>
                     <div class="info-box">
                         <div>
-                            <a class="icons" href="https://maps.app.goo.gl/8dqt7pvN7QRriw2B9">
+                            <a class="icons" href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">
                                 <font-awesome-icon :icon="['fas', 'location-dot']" /> </a>
                             <span>
-                                <a href="https://maps.app.goo.gl/8dqt7pvN7QRriw2B9">{{ $t('address1') }}</a>
-                            </span>
-                        </div>
-                        <div>
-                            <a class="icons" href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">
-                                <font-awesome-icon :icon="['fas', 'location-dot']" /> </a>
-                            <span>
-                                <a href="https://goo.gl/maps/xGXz1bnvN4Vd9rLUA">{{ $t('address2') }}</a>
+                                <a href="https://goo.gl/maps/pB2DNo6jdfY7VCGV7">85 Fətəli Xan Xoyski, Bakı</a>
+
                             </span>
                         </div>
                         <div>
@@ -89,18 +83,18 @@ export default {
                             </span>
                         </div>
                         <div>
-                            <a class="icons" href="tel:+994 55 361 43 23">
+                            <a class="icons" href="tel:+994 12 564 43 46">
                                 <font-awesome-icon :icon="['fas', 'phone']" /> </a>
                             <span>
-                                <a href="tel:+994 55 361 43 23">+994 55 361 43 23</a>
+                                <a href="tel:+994 12 564 43 46">(012) 564 43 46</a>
                             </span>
                         </div>
                         <ul class="sci">
-                            <li><a href="https://www.facebook.com/profile.php?id=100091400173458&mibextid=b06tZ0">
+                            <li><a href="https://www.facebook.com/profile.php?id=100086766889009">
                                     <font-awesome-icon class="social-icons" :icon="['fab', 'facebook']"
                                         style="border-radius: 60%; color: #3b5998;" />
                                 </a></li>
-                            <li><a href="https://www.instagram.com/escadoaz/">
+                            <li><a href="https://www.instagram.com/nerimanov_tibb_merkezi_/">
                                     <font-awesome-icon class="social-icons" :icon="['fab', 'instagram']"
                                         style=" border-radius: 30%; color: #fc7d63;" />
                                 </a></li>
@@ -108,7 +102,9 @@ export default {
                     </div>
                 </div>
                 <div class="contact map" style="padding: 20px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.7784667068986!2d49.7652287!3d40.3250739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f9d618a86bd%3A0x7dc2b869e2e7242a!2sEscadoaz!5e0!3m2!1str!2saz!4v1693248515509!5m2!1str!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2659996995785!2d49.8621627!3d40.402957699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d452db1dd6b%3A0x8660461c98fa8f44!2s85%20Fatali%20Khan%20Khoyski%2C%20Baku!5e0!3m2!1str!2saz!4v1688571985915!5m2!1str!2saz"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -122,7 +118,7 @@ export default {
     --second-bg-color: #1dde8189;
     --text-color: #ffff;
     --bg-box-color: #1dde8189;
-    --main-color: #ffff;
+    --main-color: #fff;
     --free: #1dde8100;
 
 }
@@ -360,7 +356,7 @@ export default {
     height: 100%;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 768px) {
 
     .contact-main {
         padding: 0px;
@@ -371,7 +367,6 @@ export default {
     #contact-form,
     #contact-info {
         padding: 20px;
-        margin: 5px;
     }
 
     #contact-form h3,
@@ -384,7 +379,7 @@ export default {
     #contact-info .info-box div p,
     #contact-info .info-box div a {
         font-size: 1em;
-        padding: 0px;
+        padding: 8px;
     }
 
     #contact-form .input-box input[type="submit"] {
@@ -424,23 +419,21 @@ export default {
 
     .input-box {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        /* Yatayda ortala */
         align-items: center;
         /* Dikeyde ortala */
         /* Full width for input boxes on smaller screens */
     }
 
-    .input-box .submit {
+    .input-box input {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         width: 50%;
     }
 
-
-
+    .sci li { 
+        margin-left: 0; 
+    }
     /* Adjust other styles as needed for responsiveness */
     /* For example, you might want to reduce font sizes or change element alignments */
 }</style>

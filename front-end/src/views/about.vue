@@ -1,30 +1,20 @@
 <template>
   <div class="about-container">
     <div class="about-info">
-      <h1 style="font-size: 40px;">{{ companyInfo.name }}</h1>
-      <p style="font-size: 25px">{{ companyInfo.description }}</p>
+      <h1 style="font-size: 40px; color: #064f56;">{{ $t('companyInfo.name') }}</h1>
+      <p style="font-size: 25px; color: #064f56;">{{ $t('companyInfo.description') }}</p>
     </div>
     <div class="customer-satisfaction">
       <div class="customer-text">
-        <h1>Müştəri məmnuniyyəti</h1>
+        <h1 style="color: #064f56;">{{ $t('customerSatisfaction') }}</h1>
       </div>
       <div class="slider-container">
         <div class="slider-track">
-          <div
-            class="customer-card"
-            v-for="customer in customers"
-            :key="customer.name"
-          >
-            <div class="customer-avatar">
-              
-            </div>
-            <div class="customer-name">
-              <h3>{{ customer.name }}</h3>
-            </div>
-            <div class="customer-feedback">
-              <p>{{ customer.feedback }}</p>
-            </div>
-          </div>
+          <div>
+    <div v-for="customer in $t('customerFeedbacks')" :key="customer.name">
+      <p>{{ customer.feedback }}</p>
+    </div>
+  </div>
         </div>
       </div>
     </div>
@@ -36,26 +26,13 @@
 export default {
   name: 'AboutPage',
   data() {
-    return {
-      customers: [
-        {
-          name: ' Hümbətov Orxan',
-          feedback: 'Escado ilə əməkdaşlıq etməklə həm zamanda həmdə keyfiyyətdə qazanc əldə etdim. Sürət və keyfiyyət'
-        },
-        {
-          name: 'Əsədov Murad',
-          feedback: 'Daha öncələrdə başqa şirkətlərlə əməkdaşlıq etmişdim lakin zaman baxımından Escado məni irəli saldı'
-        },
-        {
-          name: 'Quluzadə Vəli',
-          feedback: 'Almaq istədiyim məişət avadanlığını mənim üçün araşdırdılar və ucuz qiymətə mənim üçün ən qisa zamanda gətirdilər.'
-        }
-      ],
-      companyInfo: {
-        name: 'Escado',
-        description: 'Escado sizə çindən Azərbaycana karqo və digər xidmətləri göstərir. 2010-cu ildən Çində fəaliyyətə başlayan şirkətimiz Azərbaycan, Türkiyə, Rusiya, Özbəkistan, Qazaxıstan, Gürcüstan kimi ölkələrdə müxtəlif sahələrdə müştərilərə əməkdaşlıq edir. Uzun illərin təcrübəsinə əsaslanaraq sizi əmin edə bilərik ki, Şirkətimiz ilə tərəfdaşlıq biznesinizin inkişaf etməsinə böyük töhfə verəcək. Şüarımız "Müştəri Məmnuniyyətidir"',
-      },
-    };
+    return {}
+  },
+  computed: {
+    // customerFeedbacks verisini computed özelliği içinde tanımlayabilirsiniz
+    customerFeedbacks() {
+      return this.$t('customerFeedbacks');
+    },
   },
 };
 </script>
@@ -111,7 +88,7 @@ export default {
   padding: 25px;
   width: 33%;
   height: 100px;
-  background-color: #1dde8189;
+  background-color: #a5cd3a;
   border-radius: 20px;
   text-align: center;
 }
@@ -143,7 +120,7 @@ export default {
   display: inline-block;
   margin-right: 10px;
   height: auto;
-  border: 5px solid #1dde8189;
+  border: 5px solid #a5cd3a;
   border-radius: 45px 15px 45px 15px;
 
 
@@ -196,7 +173,7 @@ export default {
   }
 
   .about-info {
-    background-color: #1dde8189;
+    background-color: #a5cd3a;
   background-image: none;
   }
 .customer-text { 

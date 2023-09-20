@@ -13,9 +13,7 @@ export default {
           <div class="col-lg-6">
             <h3>ESCADO</h3>
             <p>
-              ESCADO, logistika və nəqliyyat sahəsində aparıcı şirkətdir.
-              Məqsədimiz müştərilərimizə ən yaxşı xidməti göstərmək və onların
-              logistik ehtiyaclarını ödəməkdir.
+              {{ $t('footer.text') }}
             </p>
           </div>
           <div class="col-lg-6">
@@ -27,13 +25,13 @@ export default {
                 </a>
               </div>
               <div class="icon-text">
-                <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
+                <a class="router-to-social" href="https://www.facebook.com/profile.php?id=100091400173458&mibextid=b06tZ0">
                   <font-awesome-icon :icon="['fab', 'facebook']" />
                   <span>Facebook</span>
                 </a>
               </div>
               <div class="icon-text">
-                <a class="router-to-social" href="https://www.instagram.com/escadoaz/?igshid=MzRlODBiNWFlZA%3D%3D">
+                <a class="router-to-social" href="mailto:escado@gmail.com">
                   <font-awesome-icon :icon="['fas', 'envelope']" />
                   <span>Mail</span>
                 </a>

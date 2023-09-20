@@ -26,16 +26,35 @@ export default {
             </div>
         </div>
         <div class="info">
-            <h1>Logistik xidmət</h1>
-            <p> -Konteynerlərin sərfəli qiymətə sifarişi <br> -Qapıdan-qapıya çatdırılma və ya tələb olunan Karqoya təhvil
-                <br> -Yükdaşımanın müddəti və ya istiqaməti barədə onlayn məlumat verilməsi</p>
+            <h1>{{ $t('transportInfo.title') }}</h1>
+            <ul>
+                <li>
+                    {{ $t('transportInfo.description1') }}
+      </li>
+      <li>
+                    {{ $t('transportInfo.description2') }}
+      </li>
+      <li>
+                    {{ $t('transportInfo.description3') }}
+      </li>
+    </ul>
         </div>
     </section>
 
     <section class="info-about-service" id="infoAboutTranslate">
         <div class="info" ref="infoTranslate" @scroll="handleScroll">
-            <h1>təcrümə xidməti</h1>
-            <p> Escado </p>
+            <h1>{{ $t('translateInfo.title') }}</h1>
+            <ul>
+                <li>
+                    {{ $t('translateInfo.description1') }}
+      </li>
+      <li>
+                    {{ $t('translateInfo.description2') }}
+      </li>
+      <li>
+                    {{ $t('translateInfo.description3') }}
+      </li>
+    </ul>
         </div>
         <div class="images" style="margin-right: 60px;">
             <div class="image" style="position: relative; left:45px">
@@ -63,9 +82,24 @@ export default {
             </div>
         </div>
         <div class="info">
-            <h1 style="text-align: center;">Visa dəstəyi</h1>
-            <p> - Dəvətnamənin göndərilməsi <br> - Anketin doldurulması <br> - Aviabiletin münasib qiymətə təşkili <br> -
-                Hava limanında qarşılama <br> - Htelə yerləşdirmə </p>
+            <h1 style="text-align: center;">{{ $t('visaInfo.title') }}</h1>
+            <ul>
+                <li>
+                    {{ $t('visaInfo.description1') }}
+      </li>
+      <li>
+                    {{ $t('visaInfo.description2') }}
+      </li>
+      <li>
+                    {{ $t('visaInfo.description3') }}
+      </li>
+      <li>
+                    {{ $t('visaInfo.description4') }}
+      </li>
+      <li>
+                    {{ $t('visaInfo.description5') }}
+      </li>
+    </ul>
         </div>
     </section>
 </template>

@@ -1,8 +1,16 @@
 <script>
 export default {
   name: "HeaderMenu",
-  components: {},
   data() {
+    return {
+      selectedLanguage: "az", // Başlangıçta İngilizce olarak ayarlanmıştır
+    };
+  },
+  methods: {
+    changeLanguage() {
+      // Burada seçilen dil değiştiğinde, Vue I18n ile dil ayarını güncelleyin
+      this.$i18n.locale = this.selectedLanguage;
+    },
   },
 };
 </script>
@@ -19,38 +27,59 @@ export default {
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/">Ana səyfə</router-link>
+            <router-link class="nav-link active" aria-current="page" to="/"> {{ $t('home') }} </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">Haqqımızda</router-link>
+            <router-link class="nav-link" to="/about"> {{ $t('about') }} </router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Xidmətlər
+              {{ $t('services') }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutTransport">Logistika xidməti</a>
+                <a class="dropdown-item" href="serviceComponent#infoAboutTransport">
+                  {{ $t('logisticsService') }}
+                </a>
               </li>
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutTranslate">Tərcümə xidməti</a>
+                <a class="dropdown-item" href="serviceComponent#infoAboutTranslate">
+                  {{ $t('translationService') }}
+                </a>
               </li>
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutVisa">bilet xidməti</a>
+                <a class="dropdown-item" href="serviceComponent#infoAboutVisa">
+                  {{ $t('ticketService') }}
+                </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/contact">Əlaqə</router-link>
+            <router-link class="nav-link" to="/contact">{{ $t('contact') }}</router-link>
           </li>
         </ul>
+        <select v-model="selectedLanguage" @change="changeLanguage">
+          <option value="az">Azərbaycan</option>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+          <option value="ru">Русский</option>
+          <!-- Diğer dil seçeneklerini buraya ekleyin -->
+        </select>
       </div>
     </div>
   </nav>
 </template>
+
   
 <style>
+
+:root {
+    --main-color: #a5cd3a;
+    --background-color: #064f56;
+    --grey-color: #7f8281;
+    --text-color: #ffffff;
+}
 /* Diğer stil kodları */
 .navbar {
   background-color: #ffffff;
@@ -68,6 +97,7 @@ export default {
 
 router-link {
   font-size: 100px;
+  color: #064f56;
 }
 
 .navbar-nav .nav-link {
@@ -83,8 +113,8 @@ router-link {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #13bc6a;
-  color: #ffffff;
+  background-color: #a5cd3a;
+  color: #7f8281;
 }
 
 .navbar-nav .nav-link:hover a {

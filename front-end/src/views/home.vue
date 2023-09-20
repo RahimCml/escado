@@ -76,32 +76,30 @@ export default {
         <div class="row">
           <div :class="['col', { active: selectedCol === 1 }]" @click="showInfo(1)">
             <font-awesome-icon class="icons" :icon="['fas', 'plane-departure']" />
-            <h1 class="texts">Hava Yolu</h1>
-            <p class="texts">Hava yolu vasitəsi ilə 10 dan çox ölkədən təslimat</p>
+            <h1 class="texts">{{ $t('airway') }}</h1>
+            <p class="texts">{{ $t('airwayDesc') }}</p>
           </div>
           <div :class="['col', { active: selectedCol === 2 }]" @click="showInfo(2)">
             <font-awesome-icon class="icons" :icon="['fas', 'truck-fast']" />
-            <h1 class="texts">Quru Yolu</h1>
-            <p class="texts">Quru yolu vasitəsi ilə 30 dan çox ölkədən təslimat</p>
+            <h1 class="texts">{{ $t('roadway') }}</h1>
+            <p class="texts">{{ $t('roadwayDesc') }}</p>
           </div>
           <div :class="['col', { active: selectedCol === 3 }]" @click="showInfo(3)">
             <font-awesome-icon class="icons" :icon="['fas', 'anchor']" />
-            <h1 class="texts">Dəniz Yolu</h1>
-            <!-- <h3 class="texts">30+ ölkədən</h3> -->
-            <p class="texts">Dəniz yolu vasitəsi ilə təslimat</p>
+            <h1 class="texts">{{ $t('waterway') }}</h1>
+            <p class="texts">{{ $t('waterwayDesc') }}</p>
           </div>
         </div>
       </div>
       <div class="home-container-info">
         <div v-if="selectedCol === 1" class="info" id="info">
-          <h1>10 ildən artıq zamandır hava logistika ilə xidmətinizdəyik. </h1>
+          <h4>{{ $t('airwayDescription') }}</h4>
         </div>
         <div v-if="selectedCol === 2" class="info" id="info">
-          <h1>Quru haqqinda</h1>
+          <h1>{{ $t('roadway') }}</h1>
         </div>
-
         <div v-if="selectedCol === 3" class="info" id="info">
-          <h1> Dəniz haqqinda</h1>
+          <p>{{ $t('waterwayDescription') }}</p>
         </div>
       </div>
     </div>
@@ -188,23 +186,24 @@ export default {
 
 .home-container .row .col.active {
   /* background-color: rgb(232, 227, 227); */
-  box-shadow: 0 0 1rem rgba(123, 179, 123, 0.846);
+  box-shadow: 0 0 1rem #a5cd3a;
 
 }
 
 .icons {
   height: 20%;
-  color: black;
+  color: #064f56;
 }
 
 .texts {
-  color: black;
+  color: #064f56;
 }
 
 
 .info {
   margin-top: 10px;
   padding: 10px;
+  color: #7f8281;
   /* background-color: #f9f9f9;
   border: 1px solid #ccc; */
   text-align: center;
