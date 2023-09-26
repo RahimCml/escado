@@ -1,7 +1,69 @@
 {
-    "home": "Ana Səhifə",
-    "about": "Haqqımızda",
-    "services": "Xidmətlər",
-    "contact": "Əlaqə"
+  "address1": "Yiwu alışveriş binası, Yiwu Şəhəri",
+  "address2": "57 Xocasən yolu, Bakı 1063",
+  "email": "mail",
+  "phone": "nömrə",
+  "name": "ad",
+  "surname": "soyad",
+  "number": "nömrə",
+  "massage": "mesaj",
+ 
+  "footer": {
+    "text": "ESCADO lojistika və nəqliyyat sahəsində lider bir şirkətdir. Bizim məqsədimiz müştərilərimizə ən yaxşı xidməti təqdim etmək və onların loqistik tələblərini qarşılayır."
+  },
+  "home": "Ana Səhifə",
+  "about": "Haqqımızda",
+  "services": "Xidmətlər",
+  "logisticsService": "Loqistika Xidməti", 
+  "translationService": "Tərcümə Xidməti",
+  "ticketService": "Bilet Xidməti",
+  "contact": "Əlaqə",
+  "airway": "Hava Yolu",
+  "airwayDesc": "Qısa çatdırılma, yüksək təhlükəsizlik, ucuz göndərilmə dəyəri",
+  "airwayDescription": "Hava yolu daşıyıcısı, qiymətli malların sahibinə onları qısa müddətdə çatdırmaq baxımından digər nəqliyyat növlərindən çox fərqlənir.",
+  "roadway": "Quru Yolu",
+  "roadwayDesc": "Qısa müddət ərzində xidmətinizdəyik",
+  "roadwayDescription": "Qısa müddət ərzində xidmətinizdəyik",
+  "waterway": "Dəniz Yolu",
+  "waterwayDesc": "Çin, Türkiyə, İran, Gürcüstan və 50-dən çox liman",
+  "waterwayDescription": "Çin: LIANYUNGANG PORT, NANTONG PORT, ZHANGJIAGANG PORT, NANJING PORT Türkiyə: Amberli Limanı, Gebze Limanı, Gemlik Limanı, İstanbul Limanı, İzmir Limanı və 50-dən çox liman.",
+  "companyInfo": {
+    "name": "Escado",
+    "description": "ESCADO COMPANY-nin əsas prinsiplərindən biri olan tərcümə xidməti bütün dünya üzrə müştərilər üçün sərfəli qiymətlərlə tərcümə xidmətləridi göstərir. Bizim işimizin vacib komponentlərindən biri müstəsna müştəri xidməti və mükəmməl tərcüməçi keyfiyyətidir. Bundan əlavə, biz müştərilərimizə 24/7 dəstək təklif edirik. Peşəkar tərcüməçilərimiz və dəstək komandamız müştərilərə e-poçt, telefon və ya canlı söhbət vasitəsilə kömək etmək üçün həmişə hazırdır. Hər bir müştəriyə peşakar yanaşmamız sayəsində biz kiçik bizneslərdən tutmuş Fortune 500 şirkətlərinə, dövlət qurumlarına və dünyanın aparıcı hüquq və maliyyə institutlarına qədər bütün ölçülü şirkətlərlə işləyirik."
+  },
+  "customerSatisfaction": "Müştəri məmnuniyyəti",
+  "customerFeedbacks": [
+    {
+      "name": "Orxan Hümbətov",
+      "feedback": "Escado ilə işləmək mənə yalnız vaxt qazandırmaqla qalmadı, həm də keyfiyyət qazandırdı. Sürət və keyfiyyət."
+    },
+    {
+      "name": "Murad Əsədov",
+      "feedback": "Daha öncələrdə başqa şirkətlərlə əməkdaşlıq etmişdim lakin zaman baxımından Escado məni irəli saldı"
+    },
+    {
+      "name": "Vəli Quluzadə",
+      "feedback": "Mən istədiyim ev əşyasını tədqiq edib mənə ən ucuz qiymətə mümkün qədər tez bir zamanda gətirdilər."
+    }
+  ],
+  "transportInfo": {
+    "title": "Loqistika Xidməti",
+    "description1": "- Konteynerlərin sifarişi üçün məqsədəuyğun qiymətləndirmə",
+    "description2": "- Qapıdan qapıya çatdırılma və ya istənilən məkanı çatdırılma",
+    "description3": "- Nəqliyyatın müddəti və istiqaməti barədə canlı məlumat"
+  },
+  "translateInfo": {
+    "title": "Tərcümə Xidməti",
+    "description1": "- Tərcümə xidmətlərimizdən istifadə edərək ehtiyacınıza uyğun dəqiq, peşəkar və vaxtında dil həlləri əldə edin",
+    "description2": "- Tərcümə xidmətimizi seçin və bizdən fərqli olaraq dəqiqlik, etibarlılıq və sərfəli həllərin təcrübəsini yaşayın",
+    "description3": "- Dəqiqlik, məhsuldarlıq və müştəri razıolunluğu bizim əsas prioritetlərimizdir"
+  },
+  "visaInfo": {
+    "title": "Viza Dəstəyi",
+    "description1": "- Dəvət məktubu göndərmək",
+    "description2": "- Sualların qeyd edilməsi",
+    "description3": "- Razı dəyərə səfər təşkilatı",
+    "description4": "- Aeroportda görüş",
+    "description5": "- Otel yerdəyişmə"
   }
-  
+}

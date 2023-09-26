@@ -6,15 +6,23 @@
     </div>
     <div class="customer-satisfaction">
       <div class="customer-text">
-        <h1 style="color: #064f56;">{{ $t('customerSatisfaction') }}</h1>
+        <h2 style="color: #064f56;">{{ $t('customerSatisfaction') }}</h2>
       </div>
       <div class="slider-container">
         <div class="slider-track">
           <div>
-    <div v-for="customer in $t('customerFeedbacks')" :key="customer.name">
-      <p>{{ customer.feedback }}</p>
-    </div>
-  </div>
+            <div v-for="(feedback, index) in customerFeedbacks" :key="index" class="customer-card">
+              <div class="customer-avatar">
+              
+            </div>
+            <div class="customer-name">
+              <h3>{{ feedback.name }}</h3>
+            </div>
+            <div class="customer-feedback">
+              <p>{{ feedback.feedback }}</p>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -26,13 +34,23 @@
 export default {
   name: 'AboutPage',
   data() {
-    return {}
+    return {
+      customerFeedbacks: [],
+      loading: false
+    }
   },
-  computed: {
-    // customerFeedbacks verisini computed özelliği içinde tanımlayabilirsiniz
-    customerFeedbacks() {
-      return this.$t('customerFeedbacks');
-    },
+  mounted() {
+    this.loading = false;
+      var language = this.$i18n.locale;
+      import(`@/locales/${language}.json`)
+        .then(response => {
+          this.customerFeedbacks = response.customerFeedbacks;
+          this.loading = true;
+        })
+        .catch(error => {
+          console.error('JSON verileri içe aktarılırken bir hata oluştu:', error);
+          this.loading = false;
+        });
   },
 };
 </script>
@@ -87,7 +105,7 @@ export default {
 .customer-text {
   padding: 25px;
   width: 33%;
-  height: 100px;
+  height: 85px;
   background-color: #a5cd3a;
   border-radius: 20px;
   text-align: center;
@@ -129,22 +147,23 @@ export default {
 .customer-card:hover {
   background-color: rgba(217, 239, 220, 0.53);
   border: none;
-  box-shadow: 0 0 1rem  rgba(0, 128, 0, 0.591);
+  box-shadow: 0 0 1rem rgba(0, 128, 0, 0.591);
 }
 
 .customer-name {
-
   padding-left: 10px;
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .customer-feedback {
-  width: 100%; /* Sizin istediğiniz genişlik */
+  width: 100%;
+  /* Sizin istediğiniz genişlik */
   white-space: normal;
-  text-overflow: ellipsis;    
+  text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Metni 4 satıra sınırla */
+  -webkit-line-clamp: 4;
+  /* Metni 4 satıra sınırla */
   -webkit-box-orient: vertical;
 }
 
@@ -160,7 +179,8 @@ export default {
 .customer-feedback p {
   min-width: 20px;
   padding-left: 7px;
-  font-size: 20px; /* Müşteri geri bildirimini daha küçük bir boyutta göstermek için font-size değerini ayarlayabilirsiniz */
+  font-size: 20px;
+  /* Müşteri geri bildirimini daha küçük bir boyutta göstermek için font-size değerini ayarlayabilirsiniz */
 }
 
 @media (max-width: 667px) {
@@ -174,10 +194,10 @@ export default {
 
   .about-info {
     background-color: #a5cd3a;
-  background-image: none;
+    background-image: none;
   }
-.customer-text { 
-  width: 100%;
-}
-}
-</style>
+
+  .customer-text {
+    width: 100%;
+  }
+}</style>

@@ -96,7 +96,7 @@ export default {
           <h4>{{ $t('airwayDescription') }}</h4>
         </div>
         <div v-if="selectedCol === 2" class="info" id="info">
-          <h1>{{ $t('roadway') }}</h1>
+          <h1>{{ $t('roadwayDescription') }}</h1>
         </div>
         <div v-if="selectedCol === 3" class="info" id="info">
           <p>{{ $t('waterwayDescription') }}</p>

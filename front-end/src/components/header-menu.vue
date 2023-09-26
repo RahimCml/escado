@@ -1,13 +1,17 @@
 <script>
+
+
 export default {
   name: "HeaderMenu",
   data() {
     return {
       selectedLanguage: "az", // Başlangıçta İngilizce olarak ayarlanmıştır
+      loading: false
     };
   },
   methods: {
     changeLanguage() {
+      this.loading = true
       // Burada seçilen dil değiştiğinde, Vue I18n ile dil ayarını güncelleyin
       this.$i18n.locale = this.selectedLanguage;
     },
@@ -61,7 +65,7 @@ export default {
         </ul>
         <select v-model="selectedLanguage" @change="changeLanguage">
           <option value="az">Azərbaycan</option>
-          <option value="en">English</option>
+          <option value="en">English</option> 
           <option value="zh">中文</option>
           <option value="ru">Русский</option>
           <!-- Diğer dil seçeneklerini buraya ekleyin -->

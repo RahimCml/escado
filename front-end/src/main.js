@@ -17,7 +17,7 @@ import { createI18n } from "vue-i18n";
 // Add the imported icons to the library
 library.add(fas, fab);
 const i18n = createI18n({
-    locale: "en", // Başlangıçta kullanılacak dil
+    locale: "az", // Başlangıçta kullanılacak dil
     messages: {
       en: require("./locales/en.json"),
       az: require("./locales/az.json"),

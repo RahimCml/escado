@@ -26,6 +26,7 @@ export default {
     <div id="app">
       <HeaderMenu />
     <router-view />
+    <div class="whatsapp"></div>
     <div class="elfsight-app-195e658a-b7c4-48bb-ac19-574ecfbd0255"></div>
     <FooterComponent />
 </div>
@@ -47,5 +48,23 @@ export default {
   text-decoration: none;
   list-style: none;
   font-family: "ubuntu";
+}
+
+@media (min-width: 768px) {
+  .whatsapp{
+    margin-right: 50px;
+  }
+}
+
+/* Styles for smaller screens (e.g., tablets and mobile devices) */
+@media (max-width: 767px) {
+    /* Add your mobile-specific styles here */
+    /* For example, you can stack elements vertically, reduce font sizes, etc. */
+}
+
+/* Styles for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    /* Add your phone-specific styles here */
+    /* For example, you can further reduce font sizes, adjust spacing, etc. */
 }
 </style>

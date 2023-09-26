@@ -1,7 +1,68 @@
 {
-    "home": "欢迎来到我们的网站",
-    "about": "关于我们",
-    "services": "服务",
-    "contact": "联系我们"
+  "address1": "义乌购物大厦，义乌市",
+  "address2": "巴库1063，霍贾桥路57号",
+  "email": "邮件",
+  "phone": "号码",
+  "name": "名字",
+  "surname": "姓氏",
+  "number": "号码",
+  "massage": "信息",
+  "footer": {
+    "text": "ESCADO是物流和运输领域的领先公司。我们的目标是为客户提供最佳服务，满足其物流需求。"
+  },
+  "home": "首页",
+  "about": "关于我们",
+  "services": "服务",
+  "logisticsService": "物流服务",
+  "translationService": "翻译服务",
+  "ticketService": "机票服务",
+  "contact": "联系",
+  "airway": "航空",
+  "airwayDesc": "短途送货，高度安全，更便宜的运输成本",
+  "airwayDescription": "航空货物运输在以较短的时间将货物交付给货主方面与其他类型的运输有很大的不同。",
+  "roadway": "公路",
+  "roadwayDesc": "",
+  "roadwayDescription": "道路运输的不同之处在于它覆盖了来自30多个国家的交付。",
+  "waterway": "水路",
+  "waterwayDesc": "中国、土耳其、伊朗、格鲁吉亚以及50多个港口",
+  "waterwayDescription": "中国：连云港港口、南通港口、张家港港口、南京港口 土耳其：Amberli港口、Gebze港口、Gemlik港口、伊斯坦布尔港口、伊兹密尔港口以及50多个港口。",
+  "companyInfo": {
+    "name": "Escado",
+    "description": "ESCADO公司以实惠的价格在全球提供翻译服务。我们业务的主要原则之一是提供卓越的客户服务和翻译质量。此外，我们为客户提供24/7支持。我们的专业翻译人员和支持团队随时准备通过电子邮件、电话或在线聊天协助客户。我们针对每个客户的量身定制的方法使我们能够与各种规模的企业合作，从小企业到财富500强公司、政府机构以及全球领先的法律和金融机构。"
+  },
+  "customerSatisfaction": "客户满意度",
+  "customerFeedbacks": [
+    {
+      "name": "Orxan Humbatov",
+      "feedback": "与Escado合作不仅为我节省了时间，还为我赚取了质量。速度和质量。"
+    },
+    {
+      "name": "Murad Asadov",
+      "feedback": "之前我曾与其他公司合作，但Escado在时间方面超越了我。"
+    },
+    {
+      "name": "Veli Quluzade",
+      "feedback": "他们研究了我想购买的家电，并尽快以最便宜的价格带给了我。"
+    }
+  ],
+  "transportInfo": {
+    "title": "物流服务",
+    "description1": "- 实惠的集装箱订购",
+    "description2": "- 门到门送货或送货到所需位置",
+    "description3": "- 关于运输持续时间或方向的实时信息"
+  },
+  "translateInfo": {
+    "title": "翻译服务",
+    "description1": "- 选择我们的翻译服务，享受精确、专业和及时的语言解决方案，量身定制您的需求",
+    "description2": "- 选择我们的翻译服务，体验将我们与众不同的精确度、可靠性和经济性",
+    "description3": "- 选择我们的翻译服务，其中精度、价格和客户满意度是我们的首要任务"
+  },
+  "visaInfo": {
+    "title": "签证支持",
+    "description1": "- 发送邀请函",
+    "description2": "- 填写调查问卷",
+    "description3": "- 以合理的价格安排机票",
+    "description4": "- 在机场迎接",
+    "description5": "- 酒店住宿"
   }
-  
+}
