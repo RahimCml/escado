@@ -16,16 +16,16 @@ export default {
   <section class="info-about-service" id="infoAboutTransport">
     <div class="images">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" />
+        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/shipping_about.jpeg" class="image-item" />
+        <img src="@/assets/others/shipping_about.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
       <div class="image">
-        <img src="@/assets/others/2.jpeg" class="image-item" />
+        <img src="@/assets/others/2.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
     </div>
     <div class="info">
@@ -61,16 +61,16 @@ export default {
     </div>
     <div class="images" style="margin-right: 60px">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" />
+        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/shipping_about.jpeg" class="image-item" />
+        <img src="@/assets/others/shipping_about.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
       <div class="image">
-        <img src="@/assets/others/2.jpeg" class="image-item" />
+        <img src="@/assets/others/2.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
     </div>
   </section>
@@ -78,13 +78,13 @@ export default {
   <section class="info-about-service" id="infoAboutVisa">
     <div class="images">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" />
+        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/hotel.jpeg" class="image-item" />
+        <img src="@/assets/others/hotel.jpeg" class="image-item" alt="Image Alt Text"/>
       </div>
       <div class="image">
         <img src="@/assets/others/passport.png" class="image-item" />

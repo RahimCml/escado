@@ -40,19 +40,19 @@ export default {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/boat-sea-ocean-tanker.jpg" class="d-block w-200" alt="..." />
+          <img src="@/assets/boat-sea-ocean-tanker.jpg" class="d-block w-200" alt="Image Alt Text" />
           <div class="carousel-caption d-none d-md-block" style=" margin-right: 100%; margin-bottom: 8%;">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="@/assets/airplane-logistic.jpeg" class="d-block w-100" alt="..." />
+          <img src="@/assets/airplane-logistic.jpeg" class="d-block w-100" alt="Image Alt Text" />
           <div class="carousel-caption d-none d-md-block">
             <h5>havva yolu logistikası</h5>
             <p>Daha ətrafli məlumatlar...</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="@/assets/truck-logistic.jpeg" class="d-block w-100" alt="..." />
+          <img src="@/assets/truck-logistic.jpeg" class="d-block w-100" alt="Image Alt Text" />
           <div class="carousel-caption d-none d-md-block">
             <h5>Quru logistikası</h5>
             <p>Daha ətrafli məlumatlar...</p>

@@ -22,7 +22,7 @@ export default {
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="@/assets/escado-logo.png" alt="Logo" />
+        <img src="@/assets/escado-logo.png" alt="Image Alt Text" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
