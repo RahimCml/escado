@@ -40,19 +40,19 @@ export default {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/boat-sea-ocean-tanker.jpg" class="d-block w-200" alt="Image Alt Text" />
+          <div id="img1" class="d-block w-200"> </div>
           <div class="carousel-caption d-none d-md-block" style=" margin-right: 100%; margin-bottom: 8%;">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="@/assets/airplane-logistic.jpeg" class="d-block w-100" alt="Image Alt Text" />
+          <div id="img2" class="d-block w-100"> </div>
           <div class="carousel-caption d-none d-md-block">
             <h5>havva yolu logistikası</h5>
             <p>Daha ətrafli məlumatlar...</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="@/assets/truck-logistic.jpeg" class="d-block w-100" alt="Image Alt Text" />
+          <div id="img3" class="d-block w-100"> </div>
           <div class="carousel-caption d-none d-md-block">
             <h5>Quru logistikası</h5>
             <p>Daha ətrafli məlumatlar...</p>
@@ -118,14 +118,30 @@ export default {
 }
 
 /* Resimlerin boyutunu sabitlemek için */
-.carousel-item img {
+.carousel-item #img1, #img2, #img3  {
   width: 100%;
-  /* Resimlerin genişliği 100% olacak şekilde ayarlanır */
-  height: 600px;
-  /* İstediğiniz yüksekliği buradan ayarlayabilirsiniz */
   object-fit: cover;
-  /* Resimlerin boyutunu koruyarak uygun şekilde sığmasını sağlar */
+  height: 600px; /* Maksimum yükseklik sınırlaması */
 }
+
+#img1, #img2, #img3 { 
+  background-size: cover; /* Resmi kaplayacak şekilde boyutlandır */
+  background-repeat: no-repeat; /* Tekrar etmeyi engelle */
+}
+
+#img1 { 
+  background-image: url('@/assets/boat-sea-ocean-tanker.jpg');
+}
+
+#img2 { 
+  background-image: url('@/assets/airplane-logistic.jpeg');
+}
+
+#img3 { 
+  background-image: url('@/assets/truck-logistic.jpeg');
+}
+
+
 
 .carousel-control-prev-icon {
   margin-right: 40%;
@@ -177,6 +193,7 @@ export default {
 .home-container .row .col:hover {
   box-shadow: 0 0 1rem grey;
 }
+
 
 
 .home-container .row .col img {

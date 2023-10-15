@@ -16,16 +16,16 @@ export default {
   <section class="info-about-service" id="infoAboutTransport">
     <div class="images">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoAboutTransport1" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/shipping_about.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoAboutTransport2"/>
       </div>
       <div class="image">
-        <img src="@/assets/others/2.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoAboutTransport3" />
       </div>
     </div>
     <div class="info">
@@ -61,16 +61,16 @@ export default {
     </div>
     <div class="images" style="margin-right: 60px">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoTranslate1" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/shipping_about.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoTranslate2" />
       </div>
       <div class="image">
-        <img src="@/assets/others/2.jpeg" class="image-item" alt="Image Alt Text" />
+        <img  class="image-item" id="infoTranslate3" />
       </div>
     </div>
   </section>
@@ -78,16 +78,16 @@ export default {
   <section class="info-about-service" id="infoAboutVisa">
     <div class="images">
       <div class="image" style="position: relative; left: 45px">
-        <img src="@/assets/others/airplane_about.jpeg" class="image-item" alt="Image Alt Text" />
+        <img class="image-item" id="infoAboutVisa1" />
       </div>
       <div
         class="image"
         style="margin-top: 20%; position: relative; left: 20px"
       >
-        <img src="@/assets/others/hotel.jpeg" class="image-item" alt="Image Alt Text"/>
+        <img class="image-item" id="infoAboutVisa2" />
       </div>
       <div class="image">
-        <img src="@/assets/others/passport.png" class="image-item" />
+        <img class="image-item"  id="infoAboutVisa3" />
       </div>
     </div>
     <div class="info">
@@ -200,9 +200,68 @@ export default {
   /* Resimleri sağ tarafta hizala */
 }
 
+
+#infoAboutTransport1, #infoAboutTransport2, #infoAboutTransport3 {
+    
+}
+
+
+#infoAboutTransport1 {
+    background-image: url('@/assets/others/airplane_about.jpeg');
+
+}
+
+#infoAboutTransport2 {
+    background-image: url('@/assets/others/shipping_about.jpeg');
+
+}
+
+#infoAboutTransport3 {
+    background-image: url('@/assets/others/2.jpeg');
+}
+
+/*translate*/
+
+#infoTranslate1 {
+    background-image: url('@/assets/translate.jpeg');
+
+}
+
+#infoTranslate3 {
+    background-image: url('@/assets/translatee.jpeg');
+
+}
+
+#infoTranslate2 {
+    background-image: url('@/assets/Translator_China.png');
+
+}
+
+
+
+/*visa*/
+
+#infoAboutVisa1 {
+    background-image: url('@/assets/others/airplane_about.jpeg');
+}
+
+#infoAboutVisa2 {
+    background-image: url('@/assets/others/hotel.jpeg');
+}
+
+#infoAboutVisa3 {
+    background-image: url('@/assets/others/passport.png');
+}
+
+
+
+
+
+
+
 .image-item {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: round;
   object-fit: cover;
   object-position: top;
   /* Resmi üst kısmına hizala */

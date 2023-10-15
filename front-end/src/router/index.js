@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/home.vue";
 import AboutPage from "../views/about.vue";
 import ContactPage from "../views/contact.vue";
-import LogistiServicePage from "../components/service_components/logistic_service.vue";
 import VisaServicePage from "../components/service_components/visa_service.vue";
 import TranslateServicePage from "../components/service_components/translate_service.vue";
 import ServiceComponent from "../components/serviceComponent.vue";
@@ -27,11 +26,6 @@ const routes = [
     path: "/serviceComponent",
     name: "ServiceComponent",
     component: ServiceComponent,
-  },
-  {
-    path: "/logisticService",
-    name: "LogistiServicePage",
-    component: LogistiServicePage,
   },
   {
     path: "/visaService",

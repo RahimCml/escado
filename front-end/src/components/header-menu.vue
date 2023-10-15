@@ -22,7 +22,7 @@ export default {
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="@/assets/escado-logo.png" alt="Image Alt Text" />
+        <div id="main-logo" alt="Logo"> </div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +43,17 @@ export default {
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutTransport">
+                <a class="dropdown-item" href="/serviceComponent">
                   {{ $t('logisticsService') }}
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutTranslate">
+                <a class="dropdown-item" href="/serviceComponent">
                   {{ $t('translationService') }}
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="serviceComponent#infoAboutVisa">
+                <a class="dropdown-item" href="/serviceComponent">
                   {{ $t('ticketService') }}
                 </a>
               </li>
@@ -84,25 +84,28 @@ export default {
     --grey-color: #7f8281;
     --text-color: #ffffff;
 }
-/* Diğer stil kodları */
 .navbar {
   background-color: #ffffff;
-  /* Arka plan rengini beyaz yapın */
 }
 
 .navbar-nav {
   padding-right: 10%;
 }
 
-.navbar-brand img {
-  width: 100px;
-  /* Resim genişliği istediğiniz boyuta göre ayarlayın */
+#main-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 1%;
+  width: 200px;
+  height: 48px;
+  background-image: url('/src/assets/escado-logo.png');
 }
 
 router-link {
   font-size: 100px;
   color: #064f56;
 }
+
 
 .navbar-nav .nav-link {
   position: relative;
